@@ -1,0 +1,175 @@
+{
+  "id": "92160bd14bafecb13438c8b3e3c35bc774680",
+  "revision": "101475bd14bafecb13438c8b3e3c35bc774680",
+  "version": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 173
+  },
+  "creatorIdentifier": "com.facebook.arstudio.skylight",
+  "creatorPlatform": "windows",
+  "creatorFileVersion": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 173
+  },
+  "visual_programming": {
+    "connections": [
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:97519-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "fromPatch": "template_patch_model:95528-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:97517-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:97521-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "fromPatch": "template_patch_model:97517-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "fromPort": "100",
+        "toPatch": "consumer_patch_model:97291-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:98920-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "fromPatch": "template_patch_model:98916-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:98918-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:98922-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "fromPatch": "template_patch_model:98918-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "fromPort": "100",
+        "toPatch": "producer_patch_model:98914-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "toPort": "100"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:98924-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "fromPatch": "producer_patch_model:98914-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "fromPort": "1001",
+        "toPatch": "consumer_patch_model:98912-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "toPort": "101"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:98930-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "fromPatch": "producer_patch_model:98914-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "fromPort": "1001",
+        "toPatch": "template_patch_model:95528-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "toPort": "1"
+      }
+    ],
+    "graphs": [
+      {
+        "modelName": "patch_graph",
+        "identifier": "patch_graph:92252-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "subpatches": [
+          "consumer_patch_model:97291-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+          "consumer_patch_model:98912-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+          "producer_patch_model:98914-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+          "template_patch_model:95528-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+          "template_patch_model:97517-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+          "template_patch_model:98916-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+          "template_patch_model:98918-bd14bafe-cb13-438c-8b3e-3c35bc774680"
+        ]
+      }
+    ],
+    "patches": [
+      {
+        "modelName": "consumer_patch_model",
+        "name": "audioPlaybackController0",
+        "identifier": "consumer_patch_model:97291-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "object": "playback_controller_model:97065-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "objectProperty": "audio_playback_controller_play",
+        "position": [
+          -100,
+          212
+        ]
+      },
+      {
+        "modelName": "consumer_patch_model",
+        "name": "Heart Emoji",
+        "identifier": "consumer_patch_model:98912-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "object": "master3_d_object_model:92931-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "objectProperty": "visible",
+        "position": [
+          -30.675000000000068,
+          -84.17500000000007
+        ],
+        "values": [
+          {
+            "port": "101",
+            "value": {
+              "t": "bool",
+              "v": false
+            }
+          }
+        ]
+      },
+      {
+        "modelName": "producer_patch_model",
+        "name": "targetTracker0",
+        "identifier": "producer_patch_model:98914-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "object": "moving_target_tracker_model:92493-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "position": [
+          -244,
+          -100
+        ]
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Screen Tap",
+        "identifier": "template_patch_model:95528-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "position": [
+          -700,
+          164
+        ],
+        "templateId": "builtin.tapGesture"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Switch",
+        "identifier": "template_patch_model:97517-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "position": [
+          -412,
+          164
+        ],
+        "templateId": "builtin.toggle"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Target Finder",
+        "identifier": "template_patch_model:98916-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "position": [
+          -748,
+          -100
+        ],
+        "templateId": "builtin.unifiedTargetFinder"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Target Select",
+        "identifier": "template_patch_model:98918-bd14bafe-cb13-438c-8b3e-3c35bc774680",
+        "position": [
+          -556,
+          -100
+        ],
+        "templateId": "builtin.unifiedTargetPicker",
+        "values": [
+          {
+            "port": "2",
+            "value": {
+              "t": "string",
+              "v": "texture:92603-bd14bafe-cb13-438c-8b3e-3c35bc774680"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
